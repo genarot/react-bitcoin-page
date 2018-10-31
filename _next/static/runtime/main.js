@@ -7717,7 +7717,7 @@ function () {
       route = this.normalizeRoute(route);
       var scriptRoute = route === '/' ? '/index.js' : "".concat(route, ".js");
       var script = document.createElement('script');
-      var url = "".concat(this.assetPrefix, "/_next/static/").concat(encodeURIComponent(this.buildId), "/pages").concat(scriptRoute);
+      var url = "".concat(this.assetPrefix, "_next/static/").concat(encodeURIComponent(this.buildId), "/pages").concat(scriptRoute);
       script.src = url;
 
       script.onerror = function () {
